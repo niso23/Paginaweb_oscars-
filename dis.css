@@ -1,0 +1,217 @@
+body, header {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+body {
+    background-image: url('fondoos.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 68, 68, 0.5); /* Color oscuro con transparencia */
+    z-index: -1; /* Coloca la superposición detrás del contenido */
+}
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--header-bg-color);
+    background-image: url('newlog.png');
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    position: relative;
+    color: var(--header-text-color);
+}
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura de la imagen */
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-container header {
+    position: absolute;
+    bottom: 0; /* Coloca el encabezado en la parte inferior */
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
+
+header img {
+    height: 100px;
+}
+
+
+
+
+/* Estilos para el contenido */
+h1 {
+    text-align: center;
+    color: rgb(248, 250, 114);
+    margin-top: px;
+}
+
+.container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: rgb(255, 239, 121);
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: rgb(64, 167, 185);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: rgb(48, 133, 149);
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    
+}
+
+th {
+    background-color: var(--table-header-bg-color);
+    color: var(--table-header-text-color);
+    font-weight: bold;
+    
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-row-even-bg-color);
+}
+
+tr:hover {
+    background-color: var(--table-row-hover-bg-color);
+   
+}
+
+/* Estilos para los títulos de las tablas */
+.container h2 {
+    font-size: 24px;
+    color: rgb(248, 250, 114);
+    margin-top: 40px;
+}
+
+.table-container {
+    max-width: 700px; /* Ancho máximo deseado para la tabla */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    overflow-x: auto;
+    background-color: var(--table-bg-color); /* Agrega barra de desplazamiento horizontal si es necesario */
+}
+
+td {
+    /* ... Estilos anteriores ... */
+    border-bottom: 5px solid #FFD700; /* Línea horizontal debajo de las celdas */
+}
+
+:root {
+    --background-color: #222222;
+    --header-bg-color: #F2F2F2;
+    --header-text-color: #333333;
+    --table-bg-color:#ffe030;
+    --table-header-bg-color: #FFD700; /* Dorado */
+    --table-header-text-color: #333333;
+    --table-row-even-bg-color: #ffe030;
+    --table-row-hover-bg-color:#ffea75;
+}
+
+.category-title {
+    color: var(--header-text-color);
+}
+
+.main-nav {
+    background-color: var(--header-bg-color);
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-weight: bold;
+    font-size: 16px;
+}
+.main-nav a:hover {
+    color: var(--table-header-bg-color);
+}
+.star-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star-button:hover {
+    color: #f5a623;
+}
+.star-button.selected {
+    color: #f5a623;
+}
